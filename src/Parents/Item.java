@@ -24,21 +24,18 @@ public abstract class Item {
         this.location = location;
     }
 
-    /* 
     @Override
     public boolean equals(Object obj) {
         if (this == obj){
-            return true;                                           // если ссылки совпадают
+            return true;                                                     // если ссылки совпадают
         }
 
         if (obj == null || getClass() != obj.getClass()) {
-            return false;                                         // проверяем на null и класс
+            return false;                                                   // проверяем на null и класс
         }
-
-        Item item = (Item) obj;                              // приводим объект к типу Item
-        return size == carpet.size && colour.equals(carpet.colour); // сравниваем поля
+        return false;
     }
-    */
+    
 
     @Override
     public int hashCode() {
